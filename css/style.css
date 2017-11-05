@@ -2,6 +2,8 @@
     height: 300px;
     width: 300px;
     position: relative;
+    display: inline-block;
+	margin: 20px;
 }
 .front, .back {
     height: 100%;
@@ -11,7 +13,7 @@
 }
 .front {
     background-color: #ffe200;
-    z-index: 10;
+    z-index: 1;
     backface-visibility: hidden;
 }
 .back {
