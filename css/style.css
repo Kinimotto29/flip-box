@@ -1,0 +1,26 @@
+.flip-box {
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+.front, .back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 0.5s;
+}
+.front {
+    background-color: #ffe200;
+    z-index: 10;
+    backface-visibility: hidden;
+}
+.back {
+    background-color: #000aff;
+    transform: rotateY(180deg);
+}
+.flip-box:hover .front {
+    transform: rotateY(180deg);
+}
+.flip-box:hover .back {
+    transform: rotateY(0deg);
+}
